@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    background-color: #313131;
+    height: 100vh; /* 100% da altura da janela */
+    padding: 10px;
+    display: grid; /* Usando grid para centralizar */
+    justify-items: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+  
+.container {
+    background-color: #3f3f3f;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.389);    
+    max-width: 450px;
+    width: 100%;
+    position: relative;
+}
+
+.container::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 20px solid transparent;
+    border-top: 20px solid #06d62e;
+    border-right: 20px solid #06d62e;
+}
+  
+h1 {
+    color: #06d62e;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+  
+.input-group {
+    margin-top: 10px;
+    color: #06d62e;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+  
+.input-group i {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #28a745;
+}
+  
+label {
+    font-size: 14px;
+}
+  
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    font-size: 14px;
+    outline: none;
+    margin-top: 10px;
+}
+  
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: all 0.2s ease; /* Adicionado para suavizar todas as transições */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.73);
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+button:active {
+    transform: scale(0.97); /* Reduz o tamanho para criar o efeito de pressão */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Ajusta a sombra para parecer pressionado */
+}
+
+  
+#resultado {
+    margin-top: 20px;
+}
+  
+#resultado p {
+    font-size: 16px;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+}
+  
+#resultado i {
+    margin-right: 8px;
+    color: #28a745;
+}
+  
+@media (max-width: 768px) {
+    h1 {
+        font-size: 20px;
+    }
+    
+    .container {
+        max-width: 500px;
+        width: 100%;
+
+    }
+
+    input {
+        padding: 8px;
+        font-size: 13px;
+    }
+  
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+  
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+  
+    h1 {
+        font-size: 18px;
+    }
+  
+    input, select {
+        padding: 6px;
+        font-size: 12px;
+    }
+  
+    button {
+        font-size: 12px;
+        padding: 8px;
+    }
+  
+    #resultado p {
+        font-size: 14px;
+    }
+}
+
+#hr {
+    margin-top: -20px;
+    border: none; 
+    height: 2px;
+    background-color: #06d62e; 
+}
+

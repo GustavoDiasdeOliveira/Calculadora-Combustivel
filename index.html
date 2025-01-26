@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <title>Calculadora de Combustível</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <h1>Calculadora de Combustível</h1>
+            <hr id="hr">
+            <form id="calcForm">
+                <div class="input-group">
+                    <label for="origem">Local de Origem:</label>
+                    <input type="text" id="origem" placeholder="Ex: Praia Grande" required>
+                </div>
+                <div class="input-group">
+                    <label for="destino">Local de Destino:</label>
+                    <input type="text" id="destino" placeholder="Ex: Santos" required>
+                </div>
+                <div class="input-group">
+                    <label for="distancia">Distância (km):</label>
+                    <input type="number" id="distancia" placeholder="Ex: 50" required>
+                </div>
+                <div class="input-group">
+                    <label for="cilindrada">Cilindrada (cc):</label>
+                    <input type="number" id="cilindrada" placeholder="Ex: 250" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="preco">Preço Combustível (R$):</label>
+                    <input type="number" id="preco" placeholder="Ex: 5.50" step="0.01" required>
+                </div>
+                <div class="input-group">
+                    <label for="tipoCombustivel">Tipo de Combustível:</label>
+                    <select id="tipoCombustivel" required>
+                        <option value="alcool">Álcool</option>
+                        <option value="gasolina">Gasolina</option>
+                        <option value="diesel">Diesel</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="capacidadeTanque">Capacidade do Tanque (litros):</label>
+                    <input type="number" id="capacidadeTanque" placeholder="Ex: 50" required>
+                </div>
+                <button type="button" onclick="calcular()">Calcular</button>
+            </form>
+            <div id="resultado"></div>
+        </div>
+    </section>
+
+    <script src="assets/js/teste.js"></script>
+</body>
+
+</html>
+
