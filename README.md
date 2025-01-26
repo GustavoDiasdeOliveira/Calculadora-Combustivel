@@ -1,6 +1,6 @@
 # Calculadora de Combustível
 
-![Capa do projeto](Project%20Calculate/capa.jpeg)
+![Capa do projeto](capa.jpeg)
 
 A **Calculadora de Combustível** é uma ferramenta web que permite estimar o custo de uma viagem de carro com base em dados fornecidos pelo usuário. Com ela, é possível calcular o valor gasto com combustível considerando o tipo de combustível (álcool, gasolina ou diesel), o preço por litro, a distância percorrida e o consumo médio do veículo.
 
